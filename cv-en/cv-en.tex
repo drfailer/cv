@@ -1,0 +1,201 @@
+\documentclass[12pt,a4paper,sans]{moderncv}
+
+% moderncv themes
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+% character encoding
+\usepackage[utf8]{inputenc}
+
+% no page numbering
+\pagenumbering{gobble}
+
+% header and footer
+\usepackage{fancyhdr}
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+
+%----------------------------------------------------------------------------------
+% INFORMATIONS:
+\firstname{Rémi}
+\familyname{Chassagnol}
+\title{Software Engineer Student}
+\address{Address}{23 Bd Paul Pochet Lagaye, Clermont-Ferrand, France}
+\email{chassagnol.remi@gmail.com}
+% \homepage{perso.isima.fr/$\sim$rechassagn1/isima-webpage}
+\social[github]{drfailer}
+\mobile{+33 6 01 18 40 15}
+\photo[64pt][0.4pt]{./IMG20221105115200.jpg}
+\quote{
+  Enthusiastic computer science engineering student with a passion for learning
+  and problem-solving. My academic journey has been complemented by numerous
+  personal projects where I've learnt a lot of programming languages and
+  software development methodologies. I'm currently searching for an
+  end-of-study internship where I can extend my knowledge and use my skills in a
+  professional setting.
+}
+
+% increase quote width
+\let\originalrecomputecvlengths\recomputecvlengths
+\renewcommand*{\recomputecvlengths}{%
+\originalrecomputecvlengths%
+\setlength{\quotewidth}{0.8\textwidth}}
+%----------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------
+% CONTENT:
+\begin{document}
+
+% TITLE AND NAME:
+\makecvtitle
+
+% PERSONAL STATEMENT:
+% \section{PERSONAL STATEMENT}
+% \cvline{}{todo}
+
+%-------------------------------------------------------------------------------
+% EDUCATION:
+\section{EDUCATION}
+\cventry{2021--2023}{ISIMA}{Clermont-Ferrand (France)}{
+  \newline{}
+  Three-years course for learning about various fields of computer science like
+  software engineering, simulation, software architecture or cyber-security.
+}{}{\textit{Algorithmic, Mathematics, C, C++, Java, Deep Learning}}
+\cventry{2019--2021}{Prép'ISIMA}{Clermont-Ferrand (France)}{
+  \newline{}
+  Two-year preparatory course for direct entry into ISIMA in conjunction with
+  year 1 and 2 of the UCA computer science degree course. This is a selective
+  class with less than 30 places.
+}{}{\textit{Linux development, C, Virtual Reality, Linear Programming, Mathematics}}
+\cventry{2016--2019}{Lycé}{Pierre Joël Bonté - Riom (France)}{
+  \newline{}
+  Equivalent to A levels.
+}{}{\textit{Mathematics, French, English, German, Engineering Techniques}}
+
+%-------------------------------------------------------------------------------
+% SKILLS:
+\section{SKILLS}
+\subsection{Computer Science}
+\cvcomputer{Languages}
+           {\textbf{C/C++}, \textbf{Java}, \textbf{C\#}, \textbf{Python}, \textbf{Rust}, \textbf{Haskell}, \textbf{Lisp}, \textbf{Bash}}
+           {Web}
+           {\textbf{HTML}, \textbf{CSS}, \textbf{JavaScript}, \textbf{PHP}}{}
+\cvcomputer{Modeling}
+           {\textbf{UML}.}
+           {DB}
+           {\textbf{PL/SQL} (MySQL and SQLite).}{}
+\cvcomputer{Tools}
+           {\textbf{Git}, \LaTeX}
+           {OS}
+           {\textbf{GNU/Linux}: Arch, Ubuntu, Debian. \newline{}
+             \textbf{MS.Windows}.}{}
+\cvcomputer{Frameworks}
+           {\textbf{Qt}, \textbf{.NET}, \textbf{React}}
+           {Certifications}
+           {\textbf{Cyberedu}: ANSI certification for basic cyber-security knowledge.}
+           {}
+\subsection{Languages}
+\cvlanguage{\textbf{French}}{Native speaker.}{}
+\cvlanguage{\textbf{English}}{Advanced level.}{}
+\cvlanguage{\textbf{German}}{Beginner level.}{}
+
+\clearpage{}
+
+%-------------------------------------------------------------------------------
+% INTERNSHIPS:
+\section{INTERNSHIPS}
+\cventry{Apr 2023\\to Mar 2023}{Creation of a testing tool for embedded code}{}{}{}{
+\begin{itemize}%
+  \item \textbf{Simulation} of hardware components.
+  \item Automation in a \textbf{Gitlab pipeline}.
+  \item Embedded programming in C and C++.
+\end{itemize}
+}
+
+%-------------------------------------------------------------------------------
+% PROJECTS:
+\section{PROJECTS}
+\subsection{\textbf{Creation of a programming language} (ISIMA - Nov 2022)}
+\cvline{\textbf{C++}, \textbf{Transpiler}}{
+  Studied the basics of compilers for creating a transpiled programming language
+  using \textbf{C++} and \textbf{flex/bison}.
+}
+%\cvlistitem{Worked on a complex C++ project.}
+%\cvlistitem{Learned about programming languages.}
+
+\subsection{\textbf{Graphical Interfaced Game with AI} (ISIMA - Jun 2022)}
+\cvline{\textbf{C}, \textbf{SDL}, \textbf{AI}}{
+  Worked in a group of 3 people to create a game in \textbf{C} using
+  \textbf{SDL2} and implement an AI using reinforcement learning. Was in charge
+  of the \textbf{git} repository.
+}
+%\cvlistitem{Improved \textbf{C} knowledge and discovered \textbf{SDL2} library.}
+%\cvlistitem{Learned how an AI works.}
+%\cvlistitem{Worked in team.}
+%\cvlistitem{Used \textbf{Git}.}
+
+\subsection{\textbf{Haskell parser combinators} (Personal project - Jul and Aug 2021)}
+\cvline{\textbf{Haskell}}{
+  Created a simple CLI calculator using \textbf{Haskell} and \textbf{parser
+  combinators} technique.
+}
+%\cvlistitem{Discovered a new language and a knew paradigm.}
+%\cvlistitem{Learnt how parser combinators work.}
+
+\subsection{\textbf{Unit test website} (PrepISI - Jun 2021)}
+\cvline{\textbf{Web}, \textbf{Unit test}}{
+  Worked in group of 2 people to create a \textbf{website} that allows a user to
+  run pre-written \textbf{unit test} on snippets of code.
+}
+%\cvlistitem{Acquired basic JavaScript and PHP knowledge.}
+%\cvlistitem{Discovered \textbf{frontend} and \textbf{backend} programming.}
+%\cvlistitem{Created a \textbf{Data Base}.}
+
+\subsection{\textbf{Other practical works} (UCA - 2019 \& 2021)}
+\cvline{\textbf{Web}}{Created simple \textbf{website} with a \textbf{form} and a \textbf{chat} (pairwork).}
+\cvline{\textbf{C}, \textbf{Algorithms}}{Implemented \textit{Cholesky}, \textit{Jacobi} and \textit{Gauss-Seidel} algorithms in \textbf{C} to solve linear systems (pairwork).}
+\cvline{\textbf{C}, \textbf{SDL}}{Developed a \textit{sliding puzzle} game in \textbf{C} using \textbf{SDL1} (pairwork).}
+\cvline{\textbf{Java}}{Built a \textbf{parser} for prefixed arithmetic expressions in \textbf{Java}.}
+
+%-------------------------------------------------------------------------------
+% EXPERIENCES:
+\section{EMPLOYMENT EXPERIENCES}
+\cventry{2022}
+        {Mathematics teacher}
+        {October holidays}{}{}
+        {Supported a high-school student by providing explanation concerning his Mathematics course.}
+% \cvlistitem{Helped a student.}
+% \cvlistitem{Shared knowledge and experience concerning work methods.}
+\cventry{2021 \& 2022}
+        {Manual work}
+        {Jun and Aug}{}{}
+        {Worked as a \textbf{laborer}. Restored old shutters and made some house painting.}
+% \cvlistitem{Gained autonomy and responsibility.}
+\cventry{2019 \& 2020}
+        {Highway rest area}
+        {Jun and Aug}{}{}
+        {Did different tasks such as washing dishes, cleaning inside and outside or organizing the shop.}
+% \cvlistitem{Interacted with clients.}
+% \cvlistitem{Experienced team working in a company.}
+
+%-------------------------------------------------------------------------------
+% INTERESTS:
+\section{INTERESTS}
+\cvlistitem{Former archer and member of the ETAF (french archery school which trains competitors).}
+\cvlistitem{Cycling and walking.}
+\cvlistitem{Reading comics.}
+\cvlistitem{Ecology and environment.}
+
+\fancyfoot[LF]{Rémi Chassagnol}
+
+%-------------------------------------------------------------------------------
+%% at the end
+%% \emptysection{}\closesection
+%% \vfill
+%% \begin{center}
+%% \textit{Rémi Chassagnol}
+%% \end{center}
+
+\end{document}
+%----------------------------------------------------------------------------------
